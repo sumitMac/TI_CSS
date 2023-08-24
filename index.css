@@ -18,20 +18,20 @@
 .two {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  row-gap: 10px;
+  row-gap: 15px;
 }
 .two-one {
-  background-color: green;
+  background-color: #eee1d5;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .two-two {
-  background-color: pink;
+  background-color: #eee1d5;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .four {
   background-color: aqua;
@@ -42,7 +42,7 @@
 
   grid-template-columns: 1fr 1fr;
 
-  row-gap: 10px;
+  column-gap: 20px;
 }
 .bottom {
   background-color: blueviolet;
@@ -55,20 +55,61 @@
   margin-left: 5px;
 }
 .input-one {
-  border: 1px solid gray;
+  border: 2px #885a2d solid;
   border-radius: 30px;
   position: relative;
   width: 96%;
   margin: 10px;
-  line-height: 5ex;
+  line-height: 4.5ex;
+  background-color: #eee1d5;
 }
 .user-input-label {
   position: absolute;
   top: 8ex;
   z-index: 1;
   left: 2em;
-  background-color: white;
+  background-color: #eee1d5;
+  z-index: 1;
+  color: #885a2d;
+}
+.input-two-one {
+  border: 2px #885a2d solid;
+  border-radius: 30px;
+  position: relative;
+  width: 95%;
+  align-self: center;
+  line-height: 4.5ex;
+  background-color: #eee1d5;
+}
+.input-two-two {
+  border: 2px #885a2d solid;
+  border-radius: 30px;
+  position: relative;
+  width: 30%;
+  margin-left: 16px;
+  margin-top: 10px;
+  line-height: 4.5ex;
+  background-color: #eee1d5;
+}
+.card-number {
+  position: absolute;
+  top: 8ex;
+  z-index: 1;
+  top: 17em;
+  right: 31.5em;
+  background-color: #eee1d5;
+  color: #885a2d;
   z-index: 1;
 }
-
-
+.cvv {
+  position: absolute;
+  top: 20rem;
+  z-index: 1;
+  right: 31.5em;
+  background-color: #eee1d5;
+  color: #885a2d;
+  font-weight: 100;
+}
+input:active {
+  border: blue;
+}
