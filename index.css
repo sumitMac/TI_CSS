@@ -1,19 +1,29 @@
 * {
   box-sizing: border-box;
-  box-shadow: #000;
 }
 .navbar {
-  height: 50px;
+  color: #fbf2c0;
+  letter-spacing: 2px;
+  font-family: 24px "Open San", sans-serif;
+  font-weight: bold;
+  height: 70px;
   background-color: #43281c;
   display: flex;
   justify-content: center;
 }
 .nav-img {
-  height: 50px;
+  height: 30px;
+  margin-top: 16px;
+  margin-right: 5px;
 }
 .one {
-  background: #000;
+  background: #eee1d5;
   height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
 }
 .two {
   display: grid;
@@ -34,8 +44,12 @@
   justify-content: center;
 }
 .four {
-  background-color: aqua;
+  background-color: white;
   height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .main-card {
   display: grid;
@@ -45,14 +59,19 @@
   column-gap: 20px;
 }
 .bottom {
-  background-color: blueviolet;
+  background-color: white;
   height: 100px;
 }
 .btn {
   width: 99%;
   height: 40px;
+  border: none ;
   border-radius: 20px;
-  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  background-color: #deb993;
 }
 .input-one {
   border: 2px #885a2d solid;
@@ -93,9 +112,8 @@
 }
 .card-number {
   position: absolute;
-  top: 8ex;
   z-index: 1;
-  top: 17em;
+  top: 18.3rem;
   right: 31.5em;
   background-color: #eee1d5;
   color: #885a2d;
@@ -103,7 +121,7 @@
 }
 .cvv {
   position: absolute;
-  top: 20rem;
+  top: 21.3rem;
   z-index: 1;
   right: 31.5em;
   background-color: #eee1d5;
@@ -112,4 +130,17 @@
 }
 input:active {
   border: blue;
+}
+.four-one{
+  word-spacing: 300px;
+  
+}
+.four-two{
+  word-spacing: 300px;
+  font-weight: bold;
+}
+.one-text, .two-text, .three-text{
+word-spacing: 500px;
+
+
 }
