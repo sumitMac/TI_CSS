@@ -7,61 +7,86 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
+    <nav class="main-nav">
+      <h1 class="brand">
         <img
           src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
-          alt="icon"
-          class="nav-img"
+          alt="coffee masters logo"
+          class="logo"
         />
-        <h1>Coffee Masters</h1>
-      </nav>
-    </header>
-    <main>
-      <section class="main-card">
-        <section class="one">
-          <section class="one-text">
-            <span>hi</span> <span>hello</span>
-          </section>
-          <section class="two-text">
-            <span>sumit</span> <span>hear</span>
-          </section>
-          <section class="three-text">
-            <span>howz</span> <span>you</span>
-          </section>
-        </section>
-        <section class="two">
-          <section class="two-one">
+        Coffee Masters
+      </h1>
+    </nav>
+    <div class="page">
+      <section class="order box">
+        <h2 class="box-title">ITEMS</h2>
+        <ul class="items">
+          <li class="item">
+            <div class="item-quantity">1x</div>
+            <div class="item-title">Cappucino</div>
+            <div class="item-price">$6.00</div>
+            <ul class="item-options-list">
+              <li class="item-option">Light Foam</li>
+            </ul>
+          </li>
+          <li class="item">
+            <div class="item-quantity">1x</div>
+            <div class="item-title">Cappucino</div>
+            <div class="item-price">$7.90</div>
+            <ul class="item-options-list">
+              <li class="item-option">Almond Milk</li>
+              <li class="item-option">Double Espresso Shot</li>
+            </ul>
+          </li>
+          <li class="item">
+            <div class="item-quantity">1x</div>
+            <div class="item-title">Croissant</div>
+            <div class="item-price">$5.37</div>
+            <ul class="item-options-list">
+              <li class="item-option">Butter</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="payment">
+        <div class="name-box box">
+          <h2 class="box-title">NAME</h2>
+          <div class="input-group">
             <label class="user-input-label" for="name">Name for order</label>
-            <input type="text" class="input-one" />
-          </section>
-          <section class="two-two">
-            <label for="card-number" class="card-number">Card Number</label>
-            <input type="text" class="input-two-one" />
-            <label for="ccv" class="cvv">CCV Number</label>
-            <input type="text" class="input-two-two" />
-          </section>
-        </section>
+            <input type="text" class="user-input" id="name" />
+          </div>
+        </div>
+        <div class="cc-box box">
+          <h2 class="box-title">PAYMENT</h2>
+          <div class="input-group">
+            <label class="user-input-label" for="cc">Card number</label>
+            <input type="text" class="user-input" id="cc" />
+          </div>
+          <div class="input-group">
+            <label class="user-input-label" for="ccv">CCV number</label>
+            <input type="text" class="user-input short-input" id="ccv" />
+          </div>
+        </div>
       </section>
-      <section class="four">
-        <section class="four-one">
-          <span class="fourtext">Subtoal:</span>
-          <span class="fourtext">$19.27</span>
-        </section>
-        <section class="four-one">
-          <span class="fourtext">Tax:</span> <span class="fourtext">$0.96</span>
-        </section>
-        <section class="four-two">
-          <span class="fourtext">Total:</span>
-          <span class="fourtext">$20.23</span>
-        </section>
+      <section class="total">
+        <table class="totals-table">
+          <tbody>
+            <tr>
+              <td>Subtotal:</td>
+              <td>$19.27</td>
+            </tr>
+            <tr>
+              <td>Tax:</td>
+              <td>$0.96</td>
+            </tr>
+            <tr class="final-totals">
+              <td>Total:</td>
+              <td>$20.23</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="checkout" type="button">Place order</button>
       </section>
-    </main>
-
-    <footer class="bottom">
-      <section class="btn">
-        <button class="btn">Place Order</button>
-      </section>
-    </footer>
+    </div>
   </body>
 </html>
